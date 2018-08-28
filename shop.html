@@ -41,39 +41,68 @@
                     </li>
                 </ul>
             </nav>
-            <h2>Производители:</h2>
-            <form>
-
+            <form class="SearchForm" action="https://echo.htmlacademy.ru" method="POST">
+                <fieldset>
+                    <legend>Производители</legend>
+                <input type="checkbox" name="Baxter" id="ch1">
+                <label for="ch1">Baxter Of california</label>
+                <input type="checkbox" name="MrNatty" id="ch2">
+                <label for="ch2">Mr Natty</label>
+                <input type="checkbox" name="Suavecito" id="ch3">
+                <label for="ch3">Suavecito</label>
+                <input type="radio" name="MALINGOETZ" id="ch4">
+                <label for="ch4">Malin+Goetz</label>
+                <input type="radio" name="Murrays" id="ch5">
+                <label for="ch5">Murray's</label>
+                <input type="radio" name="AmericanCrew" id="ch6">
+                <label for="ch6">American Crew</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Группы товаров</legend>
+                    <input type="radio" name="group" value="Бритвенные принадлежности" id="r1">
+                    <label for="r1">Бритвенные принадлежности</label>
+                    <input type="radio" name="group" value="Средства для ухода" id="r2">
+                    <label for="r2">Средства для ухода</label>
+                    <input type="radio" name="group" value="Аксессуары" id="r3">
+                    <label for="r3">Аксессуары</label>
+                </fieldset>
+                <input type="submit" value="Показать">
             </form>
             <ul class="arsenal-catalog">
                 <li>
                     <img src="img/item1.png" alt="Фотография товара 1">
                     <p>Набор для путешествий "Baxter of california"</p>
+                    <p>2 900 р <button class="buttonBuy">Купить</button></p>
                 </li>
 
                 <li>
                     <img src="img/item2.png" alt="Фотография товара 2">
                     <p>Увлажняющий кондиционер "Baxter of california"</p>
+                    <p>750 р <button class="buttonBuy">Купить</button></p>
                 </li>
 
                 <li>
                     <img src="img/item3.png" alt="Фотография товара 3">
                     <p>Гель для волос "Suavecito"</p>
+                    <p>290 р <button class="buttonBuy">Купить</button></p>
                 </li>
 
                 <li>
                     <img src="img/item4.png" alt="Фотография товара 4">
                     <p>Глина для укладки волос "American Crew"</p>
+                    <p>500 р <button class="buttonBuy">Купить</button></p>
                 </li>
 
                 <li>
                     <img src="img/item5.png" alt="Фотография товара 5">
                     <p>Гель для волос "American Crew"</p>
+                    <p>300 р <button class="buttonBuy">Купить</button></p>
                 </li>
 
                 <li>
                     <img src="img/item6.png" alt="Фотография товара 6">
                     <p>Набор для бритья "Baxter of california"</p>
+                    <p>3 900 р <button class="buttonBuy">Купить</button></p>
                 </li>
             </ul>
             <ul class="page-list">
@@ -105,12 +134,18 @@
     <section class="modal modal-login">
         <h2>Личный кабинет</h2>
         <p>Ввведите свой логин и пароль</p>
-        <!-- здесь будет форма -->
-        <span class="modal-close"></span>
+       <form class="LoginForm" method="POST" action="https://echo.htmlacademy.ru">
+        <label for="login">Логин</label>
+        <input type="text" id="login" name="login">
+        <label for="pass">Пароль</label>
+        <input type="password" id="pass" name="password">
+        <input type="submit" value="Отправить">
+        </form>
+     <button class="LoginClose">Закрыть</button>
     </section>
 
     <section class="modal modal-map">
-        <span class="modal-close"></span>
+      <button class="MapClose">Закрыть</button>
     </section>
 </body>
 
